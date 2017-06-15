@@ -3,31 +3,33 @@
 </h1>
 
 <label>Input Text</label>
-  <input type="number" [(ngModel)]="inputNumber">
-
+<input type="text" [ngModel]="inputNumber" disabled="true">
 <br><br>
 
 <div>
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>4</button>
-  <button>5</button>
-    <br>
-  <button>6</button>
-  <button>7</button>
-  <button>8</button>
-  <button>9</button>
-  <button>0</button>
-    <br>
+  <button (click)="updateInputNumber(1)">1</button>
+  <button (click)="updateInputNumber(2)">2</button>
+  <button (click)="updateInputNumber(3)">3</button>
+  <button (click)="updateInputNumber(4)">4</button>
+  <button (click)="updateInputNumber(5)">5</button>
+  <br>
+  <button (click)="updateInputNumber(6)">6</button>
+  <button (click)="updateInputNumber(7)">7</button>
+  <button (click)="updateInputNumber(8)">8</button>
+  <button (click)="updateInputNumber(9)">9</button>
+  <button (click)="updateInputNumber(0)">0</button>
+  <br>
 </div>
 
 <div>
-  <button (click)="addition()">+</button>
-  <button>-</button>
-  <button>*</button>
-  <button>/</button>
-  <button>=</button>
+  <button (click)="add()">+</button>
+  <button (click)="subtract()">-</button>
+  <button (click)="multiply()">*</button>
+  <button (click)="divide()">/</button>
+  <button (click)="doMath()">=</button>
 </div>
 
-  
+
+<div class="answer" *ngIf="answer">
+  <span>The Answer: {{answer}}</span>
+</div>
