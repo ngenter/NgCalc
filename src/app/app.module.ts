@@ -5,11 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CalcComponent } from './calc.component';
+import { AdvCalcComponent } from './advcalc.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, CalcComponent,
+    AppComponent, CalcComponent, AdvCalcComponent,
   ],
   imports: [
     BrowserModule,
