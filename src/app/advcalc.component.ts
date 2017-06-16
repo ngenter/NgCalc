@@ -77,4 +77,14 @@ export class AdvCalcComponent {
         break;
     }
   }
+
+  clear(){
+    this.setFirstNumber = null;
+    this.setSecondNumber = null;
+    this.inputNumber = null;
+    this.answer = null;
+
+  }
+
+
 }

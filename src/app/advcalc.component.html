@@ -27,9 +27,13 @@
   <button (click)="multiply()">*</button>
   <button (click)="divide()">/</button>
   <button (click)="doMath()">=</button>
+    <br>
+  <button (click)="clear()">Clear</button>
+
 </div>
 
 
 <div class="answer" *ngIf="answer">
   <span>The Answer: {{answer}}</span>
 </div>
+

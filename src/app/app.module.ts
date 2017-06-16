@@ -6,11 +6,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { CalcComponent } from './calc.component';
 import { AdvCalcComponent } from './advcalc.component';
+import { TestComponent} from './test.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, CalcComponent, AdvCalcComponent,
+    AppComponent, CalcComponent, AdvCalcComponent, TestComponent,
   ],
   imports: [
     BrowserModule,
